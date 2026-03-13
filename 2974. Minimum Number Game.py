@@ -1,0 +1,8 @@
+class Solution(object):
+    def numberGame(self, nums):
+        nums.sort()
+        output=[]
+        for i in range(0,len(nums),2):
+            output.append(nums[i+1])
+            output.append(nums[i])
+        return output
